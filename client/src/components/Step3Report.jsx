@@ -177,13 +177,13 @@ function Step3Report({ report }) {
         <div className='md:mb-10 w-full flex items-start gap-4 flex-wrap'>
           <button
             onClick={() => navigate("/history")}
-            className='mt-1 p-3 rounded-full bg-slate-900 shadow hover:shadow-md transition'><FaArrowLeft className='text-slate-300' /></button>
+            className='mt-1 p-3 rounded-full bg-slate-900 shadow hover:shadow-md transition'><FaArrowLeft className='text-slate-200' /></button>
 
           <div>
             <h1 className='text-3xl font-bold flex-nowrap text-slate-100'>
               Interview Analytics Dashboard
             </h1>
-            <p className='text-slate-300 mt-2'>
+            <p className='text-slate-200 mt-2'>
               AI-powered performance insights
             </p>
 
@@ -202,7 +202,7 @@ function Step3Report({ report }) {
             animate={{ opacity: 1 }}
             className="bg-slate-900 rounded-2xl sm:rounded-3xl shadow-lg p-6 sm:p-8 text-center">
 
-            <h3 className="text-slate-300 mb-4 sm:mb-6 text-sm sm:text-base">
+            <h3 className="text-slate-200 mb-4 sm:mb-6 text-sm sm:text-base">
               Overall Performance
             </h3>
             <div className='relative w-20 h-20 sm:w-25 sm:h-25 mx-auto'>
@@ -218,7 +218,7 @@ function Step3Report({ report }) {
               />
             </div>
 
-            <p className="text-slate-400 mt-3 text-xs sm:text-sm">
+            <p className="text-slate-300 mt-3 text-xs sm:text-sm">
               Out of 10
             </p>
 
@@ -226,7 +226,7 @@ function Step3Report({ report }) {
               <p className="font-semibold text-slate-100 text-sm sm:text-base">
                 {performanceText}
               </p>
-              <p className="text-slate-300 text-xs sm:text-sm mt-1">
+              <p className="text-slate-200 text-xs sm:text-sm mt-1">
                 {shortTagline}
               </p>
             </div>
@@ -245,8 +245,7 @@ function Step3Report({ report }) {
                 skills.map((s, i) => (
                   <div key={i}>
                     <div className='flex justify-between mb-2 text-sm sm:text-base'>
-
-                      <span>{s.label}</span>
+                      <span className='text-slate-100'>{s.label}</span>
                       <span className='font-semibold text-pink-400'>{s.value}</span>
                     </div>
 
@@ -317,7 +316,7 @@ function Step3Report({ report }) {
 
                   <div className='flex flex-col sm:flex-row sm:justify-between sm:items-start gap-3 mb-4'>
                     <div>
-                      <p className="text-xs text-slate-400">
+                      <p className="text-xs text-slate-300">
                         Question {i + 1}
                       </p>
 
